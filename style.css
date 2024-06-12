@@ -1,0 +1,539 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Baneer */
+
+.header{
+    background-color: #7febcb;
+    height:calc(100vh - 2vh);
+    max-width: 100%;
+}
+.banner {
+    height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./Images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0 100%, 0 0);
+    position: relative;
+}
+
+.navbar {
+    transition: background-color 0.4s;
+}
+
+.btn-outline-white {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+/*     button  get started */
+
+.btn-custom {
+    position: relative;
+    padding-right: 5.5rem;
+    /* Adjust space for arrow */
+    background-color: #7febcb;
+    color: black;
+    border: none;
+    border-radius: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-custom .arrow {
+    position: absolute;
+    right: 1rem;
+    /* Adjust position */
+    width: 3.5rem;
+    height: 1.5rem;
+    color: black;
+    /* Same as button background */
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.custome-coulmn {
+    transition: 0.3s;
+}
+
+.custome-coulmn:hover {
+    transform: translateX(+10px);
+    background-color: #fff;
+    border-radius: 5.25rem;
+}
+
+/*     button  */
+
+.fixed-top.scrolled {
+    background-color: #121423 !important;
+}
+
+/* Navbar + Header CSS ABOVE */
+
+
+/* Welcome Section CSS START */
+.content-section {
+    height: 100vh;
+    max-width: 100%;
+}
+
+.img-container {
+    position: relative;
+    margin: 50px auto;
+}
+
+.image1 {
+    position: absolute;
+    left: 450px;
+    top: -50px;
+}
+
+.image2 {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.image3 {
+    position: absolute;
+    left: 130px;
+    top: 330px
+}
+
+.welcome-contaier {
+    margin-right: 30px;
+    margin-top: 20%;
+    width: 500px;
+    margin-left: 20px;
+}
+/* Welcome Section CSS  END*/
+
+
+
+/* section winning container  START*/
+.winning-container{
+    height: 100vh;
+    max-width: 100%;
+    background-image: 
+        url("./Images/expect-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* section winning container  END*/
+
+
+/* our approach */
+
+.our-app{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* content-section */
+
+
+
+/*     button  Learn More */
+
+.btn-custom1 {
+    position: relative;
+    padding-right: 5.5rem;
+    /* Adjust space for arrow */
+    color: black;
+    border-color: black !important;
+    border-radius: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-custom1 .arrow {
+    position: absolute;
+    right: 1rem;
+    /* Adjust position */
+    width: 3.5rem;
+    height: 1.5rem;
+    color: black;
+    /* Same as button background */
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.custome-coulmn1 {
+    transition: 0.3s;
+}
+
+.custome-coulmn1:hover {
+    transform: translateX(+10px);
+    background-color: #7febcb;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5.25rem;
+}
+
+.winning {
+    background-image: url('./Images/expect-banner.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.custom-btn {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 100px !important;
+    background: transparent !important;
+    border: 4px solid black !important;
+    font-size: 102px;
+    font-family: 'Satisfy', cursive;
+}
+
+.custom-btn:hover {
+    background: transparent !important;
+    color: black !important;
+}
+
+.btnImageContainer{
+    background-image: url('./Images/bottom-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  
+}
+
+.text-container{
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+
+.our-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.imageee1{
+    position: absolute;
+    left: 350px;
+    top: 150px;
+}
+
+.our-article{
+    background-image: url('./Images/article-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 140vh;
+}
+
+.btn-explore{
+    position: relative;
+    padding-right: 5.5rem;
+    /* Adjust space for arrow */
+    color: white;
+    border: 2px solid;
+    border-image: linear-gradient(to right, darkblue, #7febcb) 1;
+    /* border-image: linear-gradient(to right, rgba(102, 144, 254, 1), rgba(127, 235, 203, 1)); */
+    border-radius: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-explore .arrow {
+    position: absolute;
+    right: 1rem;
+    /* Adjust position */
+    width: 3.5rem;
+    height: 1.5rem;
+    /* color: white; */
+    /* Same as button background */
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.btn-explore:hover{
+    color: #fff;
+}
+
+.testimonials-container{
+    background-color: #7febcb;
+    height:calc(70vh - 2vh);
+    max-width: 100%;
+}
+
+.testimonials{
+    background-color: #fff;
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0 100%, 0 0);
+    position: relative;
+}
+
+
+/* our testimonial section */
+
+/* .carousel-item1 {
+    text-align: center;
+    padding: 30px;
+    color: #333;
+} 
+.carousel-item1 img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+} 
+.carousel-caption1 {
+    position: static;
+    padding: 0;
+    color: #333;
+}
+ .testimonial-name {
+    font-weight: bold;
+}
+ .testimonial-text {
+    font-style: italic;
+} */
+/* our testimonial section */
+
+
+/* footer section */
+
+.footer {
+    width: 100%;
+    height: 70vh;
+    background-color: #121423;
+}
+
+ul li{
+    list-style: none;
+    color: #8b8b8b;
+}
+
+
+
+
+
+/* media Query for Responsiveness */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 950px) {
+    
+}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 700px) {
+    
+}
+
+@media only screen and (max-width: 568px) {
+   
+
+}
+
+@media only screen and (max-width: 450px) {
+
+}
+
+@media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+    .cs-bg{
+        background-color: #121423 !important;
+     }
+
+     h1{
+        font-size: 30px !important;
+     }
+
+     h3{
+        font-size: 18px !important;
+     }
+
+     .image1 {
+        position: absolute;
+        left: 90px;
+        top: -100px;
+        width: 70%;
+
+    }
+
+    .image2 {
+        position: absolute;
+        left: 0px;
+        top: -50px;
+        width: 70%;
+    }
+
+    .image3 {
+        position: absolute;
+        left: 10px;
+        top: 110px;
+        width: 10%;
+    }
+
+    .welcome-contaier{
+        margin-top: 45% !important;
+        max-width: 90vw;
+        text-wrap: wrap;
+    }
+
+    .our-section{
+        height: auto;
+        max-width: 100%;
+    }
+
+    .first{
+        display: none;
+    }
+    .our-app{
+        font-size: 24px !important;
+        padding: 0;
+        display: block;
+    }
+
+    .imageee1{
+        position: absolute;
+        left: 150px;
+        top: 50px;
+    }
+
+    .imagee2{
+        position: absolute;
+        left: 0px;
+        top: -50px;
+        width: 70%;
+    }
+
+    .second-section{
+        margin-top: 40%;
+    }
+    .art-slid1{
+        margin: 0px !important;
+        padding: 14% !important;
+    }
+
+    .explore-btn{
+        margin: 0px !important;
+    }
+
+    .atricle{
+        margin-left: 35% !important;
+    }
+
+    .img-slide2{
+        margin: 0px !important;
+        max-width: 100%;
+        padding: 14% !important;
+    }
+
+    .our-article{
+        height: 170vh;
+    }
+
+    .footer {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 390px) {
+
+}
+
+@media only screen and (max-width: 380px) {
+
+
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+
+
