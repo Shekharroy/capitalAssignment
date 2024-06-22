@@ -14,11 +14,12 @@ body {
 
 /* Header Baneer */
 
-.header{
+.header {
     background-color: #7febcb;
-    height:calc(100vh - 2vh);
+    height: calc(100vh - 2vh);
     max-width: 100%;
 }
+
 .banner {
     height: 100vh;
     max-width: 100%;
@@ -134,52 +135,30 @@ body {
     width: 500px;
     margin-left: 20px;
 }
+
 /* Welcome Section CSS  END*/
 
 
 
 /* section winning container  START*/
-.winning-container{
-    height: 100vh;
+.winning-container {
+    height: 150vh;
     max-width: 100%;
-    background-image: 
+    background-image:
         url("./Images/expect-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 /* section winning container  END*/
 
 
 /* our approach */
 
-.our-app{
+.our-app {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* content-section */
 
@@ -228,15 +207,15 @@ body {
     border-radius: 5.25rem;
 }
 
-.winning {
+/* #winning {
     background-image: url('./Images/expect-banner.jpg');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     position: relative;
-}
+} */
 
 
 .custom-btn {
@@ -254,7 +233,7 @@ body {
     color: black !important;
 }
 
-.btnImageContainer{
+.btnImageContainer {
     background-image: url('./Images/bottom-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,43 +243,70 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-  
+
 }
 
-.text-container{
+.text-container {
     padding-bottom: 50px;
     padding-right: 20px;
 }
 
-.our-section{
+.our-section {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
 
-.imageee1{
+.imageee1 {
     position: absolute;
     left: 350px;
     top: 150px;
 }
 
-.our-article{
+.our-article {
     background-image: url('./Images/article-banner.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     width: 100%;
-    height: 140vh;
+    height: 120vh;
 }
 
-.btn-explore{
+.mainContainer {
+    position: relative;
+}
+
+#container {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+}
+
+/* .subMainContainer{
+    position: relative;
+} */
+
+.ourLatestText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 7% auto;
+    left: 30%;
+    z-index: 999;
+}
+
+.btn-explore {
     position: relative;
     padding-right: 5.5rem;
     /* Adjust space for arrow */
     color: white;
     border: 2px solid;
     border-image: linear-gradient(to right, darkblue, #7febcb) 1;
-    /* border-image: linear-gradient(to right, rgba(102, 144, 254, 1), rgba(127, 235, 203, 1)); */
     border-radius: 0.15rem;
     display: inline-flex;
     align-items: center;
@@ -316,57 +322,29 @@ body {
     /* Adjust position */
     width: 3.5rem;
     height: 1.5rem;
-    /* color: white; */
-    /* Same as button background */
     text-align: center;
     line-height: 1.5rem;
     border-radius: 0.25rem;
     font-weight: 500;
 }
 
-.btn-explore:hover{
+.btn-explore:hover {
     color: #fff;
 }
 
-.testimonials-container{
+.testimonials-container {
     background-color: #7febcb;
-    height:calc(70vh - 2vh);
+    height: calc(70vh - 2vh);
     max-width: 100%;
 }
 
-.testimonials{
+.testimonials {
     background-color: #fff;
     width: 100%;
     height: 70vh;
     clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0 100%, 0 0);
     position: relative;
 }
-
-
-/* our testimonial section */
-
-/* .carousel-item1 {
-    text-align: center;
-    padding: 30px;
-    color: #333;
-} 
-.carousel-item1 img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-} 
-.carousel-caption1 {
-    position: static;
-    padding: 0;
-    color: #333;
-}
- .testimonial-name {
-    font-weight: bold;
-}
- .testimonial-text {
-    font-style: italic;
-} */
-/* our testimonial section */
-
 
 /* footer section */
 
@@ -376,18 +354,258 @@ body {
     background-color: #121423;
 }
 
-ul li{
+ul li {
     list-style: none;
     color: #8b8b8b;
+}
+
+.counter-container {
+    background-image: url('./Images/bottom-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counters-block {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 25%;
+
+}
+
+.numValue {
+    position: absolute;
+    /* top: 60%; */
+    left: 45%;
+    bottom: 0%;
+    /* right: 0%; */
+}
+
+
+.splide__slide img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.testimonial {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.atricle {
+    color: #7febcb;
+    font-size: 84px;
+    padding-left: 74%;
+}
+
+
+
+/* 
+.slide:nth-child(1) {
+    background-color: #ffdddd;
+}
+
+.slide:nth-child(2) {
+    background-color: #ddffdd;
+}
+
+.slide:nth-child(3) {
+    background-color: #ddddff;
+} */
+
+
+/* media Query for Responsiveness */
+
+
+@media only screen and (max-width: 400px) {
+    .cs-bg {
+        background-color: #121423 !important;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .image1 {
+        position: absolute;
+        left: 90px;
+        top: -100px;
+        width: 70%;
+
+    }
+
+    .image2 {
+        position: absolute;
+        left: 0px;
+        top: -50px;
+        width: 70%;
+    }
+
+    .image3 {
+        position: absolute;
+        left: 10px;
+        top: 110px;
+        width: 10%;
+    }
+
+    .welcome-contaier {
+        margin-top: 45% !important;
+        max-width: 90vw;
+        text-wrap: wrap;
+    }
+
+    .our-section {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .our-app {
+        font-size: 24px !important;
+        padding: 0;
+        display: block;
+    }
+
+    .imageee1 {
+        position: absolute;
+        left: 150px;
+        top: 50px;
+    }
+
+    .imagee2 {
+        position: absolute;
+        left: 0px;
+        top: -50px;
+        width: 70%;
+    }
+
+    .second-section {
+        margin-top: 40%;
+    }
+
+    .art-slid1 {
+        margin: 0px !important;
+        padding: 14% !important;
+    }
+
+    .explore-btn {
+        margin: 0px !important;
+    }
+
+    .atricle {
+        margin-left: 35% !important;
+        padding-left: 0px !important
+    }
+
+    .img-slide2 {
+        margin: 0px !important;
+        max-width: 100%;
+        padding: 14% !important;
+    }
+
+    .img-slide3 {
+        margin: 0px !important;
+        max-width: 100%;
+        padding: 14% !important;
+    }
+
+    .our-article {
+        height: 100vh;
+    }
+
+    .footer {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+
+    .ayClass {
+        position: absolute;
+        left: -80px;
+    }
+
+    .cnvsCrl {
+        /* left: -200px; */
+        /* width: 500px !important;
+        height: 500px !important; */
+    }
+
+    #container {
+        display: none;
+    }
+
+    .btn-explore {
+        padding-right: 4.5rem !important;
+        width: 112% !important;
+    }
+
+    .numValue {
+        position: absolute;
+        top: 77% !important;
+    }
+
+    canvas {
+        position: relative !important;
+        width: 320px !important;
+        height: 320px !important;
+        margin: 40px auto !important;
+        text-align: center !important;
+        left: -79px !important;
+    }
+
+    svg {
+        width: 105px !important;
+        height: 70px !important;
+        text-align: center !important;
+        position: absolute !important;
+        left: -46px !important;
+    }
+
+    .winning-container{
+        height: 120vh !important;
+    }
+
 }
 
 
 
 
 
-/* media Query for Responsiveness */
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
 
 }
 
@@ -418,110 +636,11 @@ ul li{
 
 @media only screen and (max-width: 420px) {
 
-}
-
-@media only screen and (max-width: 400px) {
-    .cs-bg{
-        background-color: #121423 !important;
-     }
-
-     h1{
-        font-size: 30px !important;
-     }
-
-     h3{
-        font-size: 18px !important;
-     }
-
-     .image1 {
-        position: absolute;
-        left: 90px;
-        top: -100px;
-        width: 70%;
-
-    }
-
-    .image2 {
-        position: absolute;
-        left: 0px;
-        top: -50px;
-        width: 70%;
-    }
-
-    .image3 {
-        position: absolute;
-        left: 10px;
-        top: 110px;
-        width: 10%;
-    }
-
-    .welcome-contaier{
-        margin-top: 45% !important;
-        max-width: 90vw;
-        text-wrap: wrap;
-    }
-
-    .our-section{
-        height: auto;
-        max-width: 100%;
-    }
-
-    .first{
-        display: none;
-    }
-    .our-app{
-        font-size: 24px !important;
-        padding: 0;
-        display: block;
-    }
-
-    .imageee1{
-        position: absolute;
-        left: 150px;
-        top: 50px;
-    }
-
-    .imagee2{
-        position: absolute;
-        left: 0px;
-        top: -50px;
-        width: 70%;
-    }
-
-    .second-section{
-        margin-top: 40%;
-    }
-    .art-slid1{
-        margin: 0px !important;
-        padding: 14% !important;
-    }
-
-    .explore-btn{
-        margin: 0px !important;
-    }
-
-    .atricle{
-        margin-left: 35% !important;
-    }
-
-    .img-slide2{
-        margin: 0px !important;
-        max-width: 100%;
-        padding: 14% !important;
-    }
-
-    .our-article{
-        height: 170vh;
-    }
-
-    .footer {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-}
+} */
 
 
 
+/* 
 
 @media only screen and (max-width: 390px) {
 
@@ -533,7 +652,4 @@ ul li{
 }
 
 @media only screen and (max-width: 320px) {
-}
-
-
-
+} */
